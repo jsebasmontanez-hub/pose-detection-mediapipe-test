@@ -41,7 +41,7 @@ def detectar_postura(result, output_image, timestamp_ms):
             angulo = np.degrees(np.arccos(cos_angulo))
             
             # UMBRAL: puedes ajustarlo entre 50 y 70 según necesites
-            UMBRAL = 60
+            UMBRAL = 55
             if angulo > UMBRAL:
                 estado = "De Pie"
                 comando = 'R'
